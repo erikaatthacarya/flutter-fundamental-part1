@@ -1,6 +1,5 @@
-// main.dart
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widgets/loading_cupertino.dart'; 
+import 'package:hello_world/basic_widgets/fab_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -106,8 +105,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyCupertinoWidget(), // Menampilkan widget dari file loading_cupertino.dart
-            const SizedBox(height: 20),
+            const Text('Floating Action Button Example:'), // keterangan FAB
+            const SizedBox(height: 10),
+            const MyFabWidget(), // panggil widget FAB buatan kamu di sini
             // hanya tampilkan angka jika counter > 0
             if (_counter > 0)
               Text(
