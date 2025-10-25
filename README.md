@@ -1,7 +1,5 @@
-# hello_world
+# Hasil Widget Flutter
 
-A new Flutter project.
+Berikut hasil tampilan aplikasi Flutter setelah menambahkan `text_widget.dart`:
 
-## Getting Started
-
-![Screenshoot hello_world](images/01.png)
+![Hasil Widget](images/hasil_widget.png)
