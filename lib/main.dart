@@ -1,5 +1,6 @@
+// main.dart
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widgets/image_widget.dart'; 
+import 'package:hello_world/basic_widgets/loading_cupertino.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -105,12 +106,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyImageWidget(), 
+            const MyCupertinoWidget(), // Menampilkan widget dari file loading_cupertino.dart
             const SizedBox(height: 20),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            // hanya tampilkan angka jika counter > 0
+            if (_counter > 0)
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
           ],
         ),
       ),
